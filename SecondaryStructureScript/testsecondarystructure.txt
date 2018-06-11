@@ -1,0 +1,54 @@
+# VMD Timeline data file
+# CREATOR= mark
+# MOL_NAME= stableconfiguration.psf
+# DATA_TITLE= struct
+# FILE_VERSION= 1.4
+# NUM_FRAMES= 10001 
+# NUM_ITEMS= 15
+# FREE_SELECTION= 0
+#
+2 U U 0 C
+3 U U 0 H
+4 U U 0 H
+5 U U 0 H
+6 U U 0 H
+7 U U 0 H
+8 U U 0 H
+9 U U 0 H
+10 U U 0 H
+11 U U 0 H
+12 U U 0 H
+13 U U 0 H
+14 U U 0 C
+15 U U 0 C
+16 U U 0 C
+2 U U 1 C
+3 U U 1 H
+4 U U 1 H
+5 U U 1 H
+6 U U 1 H
+7 U U 1 H
+8 U U 1 H
+9 U U 1 H
+10 U U 1 H
+11 U U 1 H
+12 U U 1 H
+13 U U 1 T
+14 U U 1 T
+15 U U 1 T
+16 U U 1 C
+2 U U 2 C
+3 U U 2 H
+4 U U 2 H
+5 U U 2 H
+6 U U 2 H
+7 U U 2 H
+8 U U 2 H
+9 U U 2 H
+10 U U 2 H
+11 U U 2 H
+12 U U 2 H
+13 U U 2 T
+14 U U 2 T
+15 U U 2 T
+16 U U 2 C
