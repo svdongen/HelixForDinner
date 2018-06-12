@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 #load the timeline file
-inputfilename = "secondarystructure.txt"
+inputfilename = "100CSecondarystructure.txt"
 outputfilename = "Helixpercentage.csv"
 finaldatafilename = "AverageHelix.csv"
 #set number of lines that make up the header
