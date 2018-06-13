@@ -1,0 +1,13 @@
+zoom center, 10
+hide lines;
+show cartoon;
+set ray_trace_mode, 0;
+bg_color white;
+set ray_opaque_background, 0
+set orthoscopic, on
+set depth_cue, 1
+set antialias, 2;
+ray 1024,768
+png plaatje.png
+ray 2048,1536
+png plaatjeHD.png
