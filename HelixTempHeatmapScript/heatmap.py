@@ -9,6 +9,13 @@ import matplotlib.cm as cm
 #basedirectiory
 path = "../EAAAK/"
 
+ylabels = [" "]*1000
+ylabels[0] = 0
+ylabels[249] = 0.25
+ylabels[499] = 0.5
+ylabels[749] = 0.75
+ylabels[999] = 1
+
 #array of temperature values of temperatures 
 temperatures = [5, 20, 50, 75, 100, 150, 200]
 tempno = len(temperatures)
@@ -28,15 +35,16 @@ for temp in temperatures:
 	data[:,tempiter] = newdata
 	tempiter += 1
 	
+#flip data in the helixity axis
 
-#print data
+data = np.flip(data,axis=0)	
 
-
-ax = sns.heatmap(data, cmap="hot")
-#ax1 = sns.heatmap(data, cmap="PRGn", robust=True, square=True, fmt="d")
-#ax1.set_aspect('equal','box-forced')
-#ax1.set_xticklabels(myxticklabels)
-#ax1.set_yticklabels(myyticklabels)
+ax = sns.heatmap(data, cmap="Purples", fmt="d")
+ax.set_xticklabels(temperatures)
+ax.set_yticklabels(ylabels)
+ax.tick_params(axis='both', which='major', labelsize=9)
+plt.xlabel("Temperature (" + u'\N{DEGREE SIGN}' + "C)")
+plt.ylabel("Alpha helix ratio")
 plt.show()
 plt.savefig('mytest.png')
 
