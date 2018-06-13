@@ -4,10 +4,12 @@ import seaborn as sns;
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+from matplotlib import rc
 
 
 #basedirectiory
-path = "../EAAAK/"
+peptide = "EAAAK"
+path = "../" + str(peptide) + "/"
 
 ylabels = [" "]*1000
 ylabels[0] = 0
@@ -44,7 +46,7 @@ ax.set_xticklabels(temperatures)
 ax.set_yticklabels(ylabels)
 ax.tick_params(axis='both', which='major', labelsize=9)
 plt.xlabel("Temperature (" + u'\N{DEGREE SIGN}' + "C)")
-plt.ylabel("Alpha helix ratio")
+plt.ylabel(r'$\alpha$' + "-helix ratio")
 plt.show()
 plt.savefig('mytest.png')
 
