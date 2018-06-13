@@ -8,7 +8,7 @@ from matplotlib import rc
 
 
 #basedirectiory
-peptide = "EAAAK"
+peptide = "EAIAK"
 path = "../" + str(peptide) + "/"
 
 ylabels = [" "]*1000
@@ -19,13 +19,12 @@ ylabels[749] = 0.75
 ylabels[999] = 1
 
 #array of temperature values of temperatures 
-temperatures = [5, 20, 50, 75, 100, 150, 200]
+#temperatures = [5, 20, 50, 75, 100, 125, 150, 200]
+temperatures = [5, 50, 75, 100]
 tempno = len(temperatures)
 
 #initialize heatmap matrix
 data = np.zeros([1000,tempno])
-
-print data.shape
 
 tempiter = 0
 #load data for each temperature
@@ -47,8 +46,8 @@ ax.set_yticklabels(ylabels)
 ax.tick_params(axis='both', which='major', labelsize=9)
 plt.xlabel("Temperature (" + u'\N{DEGREE SIGN}' + "C)")
 plt.ylabel(r'$\alpha$' + "-helix ratio")
-plt.show()
-plt.savefig('mytest.png')
+#plt.show()
+plt.savefig(str(peptide) + ".png", dpi=300)
 
 
 
