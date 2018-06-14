@@ -20,7 +20,7 @@ ylabels[999] = 1
 
 #array of temperature values of temperatures 
 #temperatures = [5, 20, 50, 75, 100, 125, 150, 200]
-temperatures = [5, 50, 75, 100]
+temperatures = [5, 20, 50, 75, 100]
 tempno = len(temperatures)
 
 #initialize heatmap matrix
