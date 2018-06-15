@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-import seaborn as sns;
+import seaborn as sns
 
 
 #load the timeline file

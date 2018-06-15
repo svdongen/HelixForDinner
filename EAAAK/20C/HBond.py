@@ -24,7 +24,10 @@ headerlines = 9
 
 
 #load data from file into numpy array
-data2d = pd.read_csv(inputfilename)
+data2d = pd.read_csv(inputfilename, delimiter=" ")
+
+print data2d
+time.sleep(111)
 
 for index, row in data2d.iterrows():
 		print index
