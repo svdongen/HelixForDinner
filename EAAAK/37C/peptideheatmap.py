@@ -5,7 +5,7 @@ import seaborn as sns;
 
 
 #load the timeline file
-temperature = 20
+temperature = 37
 inputfilename = str(temperature) + "CSecondarystructure.txt"
 outputfilename = "Helixpercentage.csv"
 finaldatafilename = "AverageHelix.csv"

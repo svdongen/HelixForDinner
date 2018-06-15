@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 #load the timeline file
-inputfilename = "20CSecondarystructure.txt"
+inputfilename = "37CSecondarystructure.txt"
 outputfilename = "Helixpercentage.csv"
 finaldatafilename = "AverageHelix.csv"
 #set number of lines that make up the header
@@ -46,9 +46,9 @@ timedataaverage[:,1]  = average[:,1]
 np.savetxt(outputfilename, timedataaverage, delimiter=',')
 
 #plot percentage of helix against time
-plt.plot(timedataaverage[:,0],timedataaverage[:,1])
-plt.ylim([0,1])
-plt.show()
+#plt.plot(timedataaverage[:,0],timedataaverage[:,1])
+#plt.ylim([0,1])
+#plt.show()
 
 
 timeaverages = np.zeros([AverageBlocks])

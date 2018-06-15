@@ -20,7 +20,7 @@ def kde_sklearn(x, x_grid, bandwidth=0.2, **kwargs):
 
 
 #datafile
-temperature = 20
+temperature = 37
 datafilename = "Helixpercentage.csv"
 KDEfilename = "KDE" + str(temperature) + "C.csv"
 figfilename = "Distribution" + str(temperature) + "C.png"
