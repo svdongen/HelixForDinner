@@ -8,8 +8,8 @@ from matplotlib import rc
 
 
 #basedirectiory
-peptide = "EAAAK"
-#peptide = "EAIAK"
+#peptide = "EAAAK"
+peptide = "EAIAK"
 path = "../" + str(peptide) + "/"
 
 ylabels = [" "]*1000
